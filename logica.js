@@ -102,3 +102,12 @@ function Desencriptar(fraseDesencriptada) {
     }
     return fraseDesencriptada;
 }
+
+function copyToClipBoard() {
+
+    var content = document.getElementById('textArea');
+
+    content.select();
+    document.execCommand('copy');
+    document.getElementById('textArea').value = "";
+}
